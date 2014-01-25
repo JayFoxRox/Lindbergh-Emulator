@@ -1,0 +1,80 @@
+Directory structure:
+
+[Generic:]
+
+- old/
+The old attempt at lindbergh emulation which got less and less stable over time as it had to hook various functions
+
+- fs/
+The emulated lindbergh filesystem
+
+- ld/
+Lindbergh Libraries (Preloaded path)
+
+- README
+This readme
+
+- fusefs/
+The fuse filesystem emulation
+
+- preload/
+The preload library
+
+[Filesystem emulator:]
+
+- fsentries.c
+Emulation of lindbergh device files
+
+- fusefslog.c / fusefslog.h
+Log entries for the fuse filesystem
+
+- fuseparams.h
+Sets API version for fuse.h and defines structure for the private_data of fuse
+
+[Emulation library:]
+
+- main.c
+Main entrance point for the emulator library where I hook the staticly linked functions for JVS and the dongle
+
+- io.c / io.h
+IO Emulation and SIGSEGV handling
+
+- nvidiagl.c
+Some functions from common GL Extensions accross Lindbergh games
+
+- linker.h
+A quick linker wrapper for dynamicly loading functions
+
+- context.h
+A x86 ucontext union for easier access
+
+
+
+Plan:
+
+- Later-1: Run a fuse-fs which mirrors the root but adds custom lindbergh fs entries. These FS entries are emulated by the filesystem emulator directly
+  - NVIDIA graphics card
+  - Later-?: /dev/lbb Baseboard
+  - If necessary: /dev/tts/0 COM-Port (I have seen /dev/ttyS0 instead before)
+  - If necessary: /dev/tts/1 COM-Port (I have seen /dev/ttyS1 instead before)
+  - /dev/i2c/0 EEPROM (Interpreted (100% of captured traffic known, implemented as in chip datasheet) and file backed)
+  - If necessary, only fake necessary parts: /dev/hda ATA-device
+  - If necessary, only fake existence: /etc/creative/* Creative soundcard files
+  - If necessary, only fake existence: /dev/emu10kxSoundcard
+  - If necessary, only fake existence: /dev/emupia Soundcard
+  - If necessary, only fake necessary parts: /proc/bus/pci/00/1f.0 This might be the graphics card - can't remember (//Edit: This seems to be the LPC?!)
+  - Hide /dev/js* (some games might want debug input, so it would get the same input via js and emulated JVS (using the same js))
+- Run a preloaded bash (possibly in a chroot?) which then hooks:
+  - amJvs and amDongle functions + anything else which talks to the baseboard for now
+  - signal functions, exit if the app calls these. Later I should make sure that the original function is called after mine if there was nothing to emulate
+  - iopl (Block any hardware access and install a signal handler instead!)
+  - GLUT: so we can run windowed
+  - GLX to provide unsupported NVIDIA extensions
+  - Later-2: GLX so we have full control over opengl
+- Also preload the custom SEGAAPI-lib.
+- Later-3: preload library: everytime the game wants to change that make sure we get the signal first
+- In the signal handler wait for in/out instructions and emulate them
+- Later-4: Drop amJvs and amDongle emulation and move to fuse
+- Later-5: Replace fuse-fs with hooks
+
+

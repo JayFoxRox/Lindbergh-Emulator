@@ -1,0 +1,112 @@
+root@(none):/tmp# lspci -v
+0000:00:00.0 Host bridge: %Intel Corporation %82875P/E7210 Memory Controller Hub (rev 02)
+	Subsystem: %NEC Corporation: Unknown device 82c0
+	Flags: bus master, fast devsel, latency 0
+	Memory at d8000000 (32-bit, prefetchable) [size=128M]
+	Capabilities: [e4] #09 [2106]
+	Capabilities: [a0] AGP version 3.0
+
+0000:00:01.0 PCI bridge: %Intel Corporation %82875P Processor to AGP Controller (rev 02) (prog-if 00 [Normal decode])
+	Flags: bus master, 66MHz, fast devsel, latency 96
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=80
+	Memory behind bridge: d1000000-d2ffffff
+	Prefetchable memory behind bridge: e0000000-efffffff
+
+0000:00:1c.0 PCI bridge: %Intel Corporation %6300ESB 64-bit PCI-X Bridge (rev 02) (prog-if 00 [Normal decode])
+	Flags: bus master, 66MHz, fast devsel, latency 40
+	Bus: primary=00, secondary=03, subordinate=03, sec-latency=48
+	I/O behind bridge: 00002000-00002fff
+	Memory behind bridge: d3000000-d30fffff
+	Capabilities: [50] PCI-X bridge device.
+
+0000:00:1d.0 USB Controller: %Intel Corporation %6300ESB USB Universal Host Controller (rev 02) (prog-if 00 [UHCI])
+	Subsystem: %NEC Corporation: Unknown device 82c0
+	Flags: bus master, medium devsel, latency 0, IRQ 16
+	I/O ports at 1840 [size=32]
+
+0000:00:1d.1 USB Controller: %Intel Corporation %6300ESB USB Universal Host Controller (rev 02) (prog-if 00 [UHCI])
+	Subsystem: %NEC Corporation: Unknown device 82c0
+	Flags: bus master, medium devsel, latency 0, IRQ 19
+	I/O ports at 1860 [size=32]
+
+0000:00:1d.4 System peripheral: %Intel Corporation %6300ESB Watchdog Timer (rev 02)
+	Subsystem: %NEC Corporation: Unknown device 82c0
+	Flags: medium devsel
+	Memory at d0000000 (32-bit, non-prefetchable) [size=16]
+
+0000:00:1d.5 PIC: %Intel Corporation %6300ESB I/O Advanced Programmable Interrupt Controller (rev 02) (prog-if 20 [IO(X)-APIC])
+	Subsystem: %NEC Corporation: Unknown device 82c0
+	Flags: bus master, fast devsel, latency 0
+	Capabilities: [50] PCI-X non-bridge device.
+
+0000:00:1d.7 USB Controller: %Intel Corporation %6300ESB USB2 Enhanced Host Controller (rev 02) (prog-if 20 [EHCI])
+	Subsystem: %NEC Corporation: Unknown device 82c0
+	Flags: bus master, medium devsel, latency 0, IRQ 23
+	Memory at d0000400 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+	Capabilities: [58] #0a [2080]
+
+0000:00:1e.0 PCI bridge: %Intel Corporation %82801 PCI Bridge (rev 0a) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=00, secondary=04, subordinate=04, sec-latency=32
+	I/O behind bridge: 00003000-00003fff
+	Memory behind bridge: d3100000-d34fffff
+
+0000:00:1f.0 ISA bridge: %Intel Corporation %6300ESB LPC Interface Controller (rev 02)
+	Flags: bus master, medium devsel, latency 0
+
+0000:00:1f.2 IDE interface: %Intel Corporation %6300ESB SATA Storage Controller (rev 02) (prog-if 8a [Master SecP PriP])
+	Subsystem: %NEC Corporation: Unknown device 82c0
+	Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 17
+	I/O ports at <unassigned>
+	I/O ports at <unassigned>
+	I/O ports at <unassigned>
+	I/O ports at <unassigned>
+	I/O ports at 18b0 [size=16]
+
+0000:00:1f.3 SMBus: %Intel Corporation %6300ESB SMBus Controller (rev 02)
+	Subsystem: %NEC Corporation: Unknown device 82c0
+	Flags: medium devsel, IRQ 17
+	I/O ports at 1880 [size=32]
+
+0000:00:1f.5 Multimedia audio controller: %Intel Corporation %6300ESB AC'97 Audio Controller (rev 02)
+	Subsystem: %NEC Corporation: Unknown device 82c0
+	Flags: bus master, medium devsel, latency 0, IRQ 17
+	I/O ports at 1400 [size=256]
+	I/O ports at 1800 [size=64]
+	Memory at d0001000 (32-bit, non-prefetchable) [size=512]
+	Memory at d0000c00 (32-bit, non-prefetchable) [size=256]
+	Capabilities: [50] Power Management version 2
+
+0000:01:00.0 VGA compatible controller: %nVidia Corporation %NV40 [GeForce 6800 GT] (rev a1) (prog-if 00 [VGA])
+	Subsystem: %nVidia Corporation: Unknown device 0204
+	Flags: 66MHz, medium devsel, IRQ 16
+	Memory at d2000000 (32-bit, non-prefetchable) [size=16M]
+	Memory at e0000000 (32-bit, prefetchable) [size=256M]
+	Memory at d1000000 (32-bit, non-prefetchable) [size=16M]
+	Capabilities: [60] Power Management version 2
+	Capabilities: [44] AGP version 3.0
+
+0000:03:01.0 Ethernet controller: %Intel Corporation %82541GI/PI Gigabit Ethernet Controller (rev 05)
+	Subsystem: %NEC Corporation: Unknown device 82c0
+	Flags: bus master, 66MHz, medium devsel, latency 52, IRQ 24
+	Memory at d3020000 (32-bit, non-prefetchable) [size=128K]
+	Memory at d3000000 (32-bit, non-prefetchable) [size=128K]
+	I/O ports at 2000 [size=64]
+	Capabilities: [dc] Power Management version 2
+	Capabilities: [e4] PCI-X non-bridge device.
+
+0000:04:02.0 Multimedia audio controller: %Creative Labs %SB0400 Audigy2 Value
+	Subsystem: %Creative Labs: Unknown device 1101
+	Flags: bus master, fast Back2Back, medium devsel, latency 32, IRQ 22
+	I/O ports at 3000 [size=64]
+	Capabilities: [dc] Power Management version 2
+
+0000:04:03.0 Bridge: %Motorola %MPC8271/MPC8272 (rev 10)
+	Subsystem: %Sega Enterprises Ltd: Unknown device 067b
+	Flags: bus master, 66MHz, fast devsel, latency 32, IRQ 23
+	Memory at d3400000 (32-bit, non-prefetchable) [size=128K]
+	Memory at d3100000 (32-bit, non-prefetchable) [size=1M]
+	Memory at d3200000 (32-bit, non-prefetchable) [size=2M]
+	Capabilities: [48] #06 [0000]
+

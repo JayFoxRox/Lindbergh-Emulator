@@ -1,0 +1,140 @@
+
+Test 1:
+
+
+Returned 0
+data[0] - ack + command: A6000220
+data[1] - src: 1000
+data[2] - src-size: 6
+data[3] - dst: 1100
+data[4] - dst-size: 100
+data[5]: 0
+data[6]: 0
+Got ack?!
+data[0] - ack? + command: 26000220
+data[1] - status: AAAAAAAA
+data[2] - addr: AAAAAAAA
+data[3] - size: AAAAAAAA
+data[4] - buffer-size: AAAAAAAA
+data[5]: AAAAAAAA
+data[6]: AAAAAAAA
+
+Got ack?!
+data[0] - ack? + command: 26000220
+data[1] - status: AAAAAAAA
+data[2] - addr: AAAAAAAA
+data[3] - size: AAAAAAAA
+data[4] - buffer-size: AAAAAAAA
+data[5]: AAAAAAAA
+data[6]: AAAAAAAA
+
+Got ack?!
+data[0] - ack? + command: 26000220
+data[1] - status: AAAAAAAA
+data[2] - addr: AAAAAAAA
+data[3] - size: AAAAAAAA
+data[4] - buffer-size: AAAAAAAA
+data[5]: AAAAAAAA
+data[6]: AAAAAAAA
+
+Got ack?!
+data[0] - ack? + command: A6008220
+data[1] - status: FFFFFFFF
+data[2] - addr: 1100
+data[3] - size: 0
+data[4] - buffer-size: 100
+data[5]: 0
+data[6]: 0
+
+Returned 0
+data[0] - ack + command: A7000220
+data[1] - src: 1000
+data[2] - src-size: 6
+data[3] - dst: 1100
+data[4] - dst-size: 100
+data[5]: 0
+data[6]: 0
+Got ack?!
+data[0] - ack? + command: 27000220
+data[1] - status: AAAAAAAA
+data[2] - addr: AAAAAAAA
+data[3] - size: AAAAAAAA
+data[4] - buffer-size: AAAAAAAA
+data[5]: AAAAAAAA
+data[6]: AAAAAAAA
+
+Got ack?!
+data[0] - ack? + command: 27000220
+data[1] - status: AAAAAAAA
+data[2] - addr: AAAAAAAA
+data[3] - size: AAAAAAAA
+data[4] - buffer-size: AAAAAAAA
+data[5]: AAAAAAAA
+data[6]: AAAAAAAA
+
+Got ack?!
+data[0] - ack? + command: 27000220
+data[1] - status: AAAAAAAA
+data[2] - addr: AAAAAAAA
+data[3] - size: AAAAAAAA
+data[4] - buffer-size: AAAAAAAA
+data[5]: AAAAAAAA
+data[6]: AAAAAAAA
+
+Got ack?!
+data[0] - ack? + command: A7008220
+data[1] - status: FFFFFFFF
+data[2] - addr: 1100
+data[3] - size: 0
+data[4] - buffer-size: 100
+data[5]: 0
+data[6]: 0
+
+Reset!
+Returned 0
+data[0] - ack + command: A8000220
+data[1] - src: 1000
+data[2] - src-size: 6
+data[3] - dst: 1100
+data[4] - dst-size: 100
+data[5]: 0
+data[6]: 0
+Got ack?!
+data[0] - ack? + command: 28000220
+data[1] - status: AAAAAAAA
+data[2] - addr: AAAAAAAA
+data[3] - size: AAAAAAAA
+data[4] - buffer-size: AAAAAAAA
+data[5]: AAAAAAAA
+data[6]: AAAAAAAA
+
+Got ack?!
+data[0] - ack? + command: 28000220
+data[1] - status: AAAAAAAA
+data[2] - addr: AAAAAAAA
+data[3] - size: AAAAAAAA
+data[4] - buffer-size: AAAAAAAA
+data[5]: AAAAAAAA
+data[6]: AAAAAAAA
+
+Got ack?!
+data[0] - ack? + command: 28000220
+data[1] - status: AAAAAAAA
+data[2] - addr: AAAAAAAA
+data[3] - size: AAAAAAAA
+data[4] - buffer-size: AAAAAAAA
+data[5]: AAAAAAAA
+data[6]: AAAAAAAA
+
+Got ack?!
+data[0] - ack? + command: A8008220
+data[1] - status: FFFFFFFF
+data[2] - addr: 1100
+data[3] - size: 0
+data[4] - buffer-size: 100
+data[5]: 0
+data[6]: 0
+
+Size: 0
+ 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB
+

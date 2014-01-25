@@ -1,0 +1,341 @@
+root@(none):/tmp/tools# dmesg
+reeing initrd memory: 1482k freed
+NET: Registered protocol family 16
+PCI: PCI BIOS revision 2.10 entry at 0xfda8a, last bus=5
+PCI: Using configuration type 1
+mtrr: v2.0 (20020519)
+PCI: Probing PCI hardware
+PCI: Probing PCI hardware (bus 00)
+PCI: Ignoring BAR0-3 of IDE controller 0000:00:1f.2
+PCI: Transparent bridge - 0000:00:1e.0
+PCI: Discovered primary peer bus 05 [IRQ]
+PCI: Using IRQ router PIIX/ICH [8086/25a1] at 0000:00:1f.0
+PCI->APIC IRQ transform: (B0,I29,P0) -> 16
+PCI->APIC IRQ transform: (B0,I29,P1) -> 19
+PCI->APIC IRQ transform: (B0,I29,P3) -> 23
+PCI->APIC IRQ transform: (B0,I31,P0) -> 17
+PCI->APIC IRQ transform: (B0,I31,P1) -> 17
+PCI->APIC IRQ transform: (B0,I31,P1) -> 17
+PCI->APIC IRQ transform: (B1,I0,P0) -> 16
+PCI->APIC IRQ transform: (B3,I1,P0) -> 24
+PCI->APIC IRQ transform: (B4,I2,P0) -> 22
+PCI->APIC IRQ transform: (B4,I3,P0) -> 23
+Simple Boot Flag at 0x44 set to 0x80
+highmem bounce pool size: 64 pages
+Initializing Cryptographic API
+vesafb: framebuffer at 0xe0000000, mapped to 0xf4880000, using 1200k, total 262144k
+vesafb: mode is 640x480x16, linelength=1280, pages=4
+vesafb: protected mode interface info at c000:ce20
+vesafb: scrolling: redraw
+vesafb: Truecolor: size=0:5:6:5, shift=0:11:5:0
+bootsplash 3.1.4-2004/02/19: looking for picture.... silentjpeg size 7503 bytes, found (640x480, 2109 bytes, v3).
+Console: switching to colour frame buffer device 80x30
+fb0: VESA VGA frame buffer device
+Real Time Clock Driver v1.12a
+i8042.c: Can't read CTR while initializing i8042.
+Serial: 8250/16550 driver $Revision: 1.90 $ 8 ports, IRQ sharing disabled
+ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+ttyS1 at I/O 0x2f8 (irq = 3) is a 16550A
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered
+RAMDISK driver initialized: 16 RAM disks of 8192K size 1024 blocksize
+loop: loaded (max 32 devices)
+Uniform Multi-Platform E-IDE driver Revision: 7.00alpha2
+ide: Assuming 33MHz system bus speed for PIO modes; override with idebus=xx
+Probing IDE interface ide0...
+hda: SanDisk SDCFB-64, ATA DISK drive
+ide1: I/O resource 0x170-0x177 not free.
+ide1: ports already in use, skipping probe
+Probing IDE interface ide2...
+Probing IDE interface ide3...
+Probing IDE interface ide4...
+Probing IDE interface ide5...
+elevator: using anticipatory as default io scheduler
+ide0 at 0x1f0-0x1f7,0x3f6 on irq 14
+hda: max request size: 128KiB
+hda: 125440 sectors (64 MB) w/1KiB Cache, CHS=490/8/32
+hda: cache flushes not supported
+ hda: hda1 hda2
+mice: PS/2 mouse device common for all mice
+input: PC Speaker
+NET: Registered protocol family 2
+IP: routing cache hash table of 4096 buckets, 64Kbytes
+TCP: Hash tables configured (established 131072 bind 43690)
+Initializing XFRM netlink socket
+NET: Registered protocol family 1
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+Starting balanced_irq
+RAMDISK: Compressed image found at block 0
+VFS: Mounted root (ext2 filesystem).
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+Freeing unused kernel memory: 204k freed
+usbcore: registered new driver usbfs
+usbcore: registered new driver hub
+usbcore: registered new driver usbkbd
+drivers/usb/input/usbkbd.c: :USB HID Boot Protocol keyboard driver
+USB Universal Host Controller Interface driver v2.2
+uhci_hcd 0000:00:1d.0: UHCI Host Controller
+PCI: Setting latency timer of device 0000:00:1d.0 to 64
+uhci_hcd 0000:00:1d.0: irq 16, io base 0x1840
+uhci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 1
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+uhci_hcd 0000:00:1d.1: UHCI Host Controller
+PCI: Setting latency timer of device 0000:00:1d.1 to 64
+uhci_hcd 0000:00:1d.1: irq 19, io base 0x1860
+uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 2
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+ehci_hcd 0000:00:1d.7: EHCI Host Controller
+PCI: Setting latency timer of device 0000:00:1d.7 to 64
+ehci_hcd 0000:00:1d.7: irq 23, pci mem 0xd0000400
+ehci_hcd 0000:00:1d.7: new USB bus registered, assigned bus number 3
+PCI: cache line size of 128 is not supported by device 0000:00:1d.7
+ehci_hcd 0000:00:1d.7: USB 2.0 initialized, EHCI 1.00, driver 26 Oct 2004
+hub 3-0:1.0: USB hub found
+hub 3-0:1.0: 6 ports detected
+i2c /dev entries driver
+usb 1-1: new low speed USB device using uhci_hcd and address 2
+Disabled Privacy Extensions on device c039e3e0(lo)
+input: LITEON Technology USB Multimedia Keyboard on usb-0000:00:1d.0-1
+Linux agpgart interface v0.100 (c) Dave Jones
+agpgart: Detected an Intel i875 Chipset.
+agpgart: Maximum main memory to use for agp memory: 941M
+agpgart: AGP aperture is 128M @ 0xd8000000
+usb 1-2: new full speed USB device using uhci_hcd and address 3
+usbcore: registered new driver hiddev
+hw_random hardware driver 1.0.0 loaded
+SCSI subsystem initialized
+libata version 1.10 loaded.
+ata_piix version 1.03
+ata_piix: combined mode detected
+ata: 0x1f0 IDE port busy
+PCI: Setting latency timer of device 0000:00:1f.2 to 64
+ata1: SATA max UDMA/133 cmd 0x170 ctl 0x376 bmdma 0x18B8 irq 15
+ata1: dev 0 cfg 49:2f00 82:346b 83:7fe9 84:4773 85:3469 86:bc01 87:4763 88:207f
+ata1: dev 0 ATA, max UDMA/133, 156301488 sectors: lba48
+ata1: dev 0 configured for UDMA/133
+scsi0 : ata_piix
+  Vendor: ATA       Model: ExcelStor Techno  Rev: P21O
+  Type:   Direct-Access                      ANSI SCSI revision: 05
+SCSI device sda: 156301488 512-byte hdwr sectors (80026 MB)
+SCSI device sda: drive cache: write back
+SCSI device sda: 156301488 512-byte hdwr sectors (80026 MB)
+SCSI device sda: drive cache: write back
+ sda: unknown partition table
+Attached scsi disk sda at scsi0, channel 0, id 0, lun 0
+i2c_i801: Ignoring new-style parameters in presence of obsolete ones
+Intel(R) PRO/1000 Network Driver - version 7.0.41
+Copyright (c) 1999-2006 Intel Corporation.
+e1000: 0000:03:01.0: e1000_probe: (PCI:66MHz:32-bit) 00:d0:f1:0c:4e:d2
+e1000: eth0: e1000_probe: Intel(R) PRO/1000 Network Connection
+drivers/usb/input/hid-core.c: timeout initializing reports
+
+input,hiddev96: USB HID v1.10 Mouse [ACROX A1H Mouse] on usb-0000:00:1d.0-2
+input: USB HID v1.11 Keyboard [ACROX A1H Mouse] on usb-0000:00:1d.0-2
+usbcore: registered new driver usbhid
+drivers/usb/input/hid-core.c: v2.0:USB HID core driver
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on sda, internal journal
+EXT3-fs: recovery complete.
+EXT3-fs: mounted filesystem with ordered data mode.
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+basebd: module license 'unspecified' taints kernel.
+LBB: SRAM 2048[kB]
+LBB: Baseboard driver ver. 1.11 
+LBB: found 837-14472 Base Board at C1961400 dev_id=F4A753E0(F4A753E0)
+LBB: IRQ=23
+LBB: base board is ready.
+ctaud: Device found: IO Base = 0x3000, IRQ = 22
+PCI: Setting latency timer of device 0000:00:1f.5 to 64
+intel8x0_measure_ac97_clock: measured 50729 usecs
+intel8x0: clocking to 48000
+e1000: eth0: e1000_watchdog: NIC Link is Up 1000 Mbps Full Duplex
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+root@(none):/tmp/tools# dmesg -c
+reeing initrd memory: 1482k freed
+NET: Registered protocol family 16
+PCI: PCI BIOS revision 2.10 entry at 0xfda8a, last bus=5
+PCI: Using configuration type 1
+mtrr: v2.0 (20020519)
+PCI: Probing PCI hardware
+PCI: Probing PCI hardware (bus 00)
+PCI: Ignoring BAR0-3 of IDE controller 0000:00:1f.2
+PCI: Transparent bridge - 0000:00:1e.0
+PCI: Discovered primary peer bus 05 [IRQ]
+PCI: Using IRQ router PIIX/ICH [8086/25a1] at 0000:00:1f.0
+PCI->APIC IRQ transform: (B0,I29,P0) -> 16
+PCI->APIC IRQ transform: (B0,I29,P1) -> 19
+PCI->APIC IRQ transform: (B0,I29,P3) -> 23
+PCI->APIC IRQ transform: (B0,I31,P0) -> 17
+PCI->APIC IRQ transform: (B0,I31,P1) -> 17
+PCI->APIC IRQ transform: (B0,I31,P1) -> 17
+PCI->APIC IRQ transform: (B1,I0,P0) -> 16
+PCI->APIC IRQ transform: (B3,I1,P0) -> 24
+PCI->APIC IRQ transform: (B4,I2,P0) -> 22
+PCI->APIC IRQ transform: (B4,I3,P0) -> 23
+Simple Boot Flag at 0x44 set to 0x80
+highmem bounce pool size: 64 pages
+Initializing Cryptographic API
+vesafb: framebuffer at 0xe0000000, mapped to 0xf4880000, using 1200k, total 262144k
+vesafb: mode is 640x480x16, linelength=1280, pages=4
+vesafb: protected mode interface info at c000:ce20
+vesafb: scrolling: redraw
+vesafb: Truecolor: size=0:5:6:5, shift=0:11:5:0
+bootsplash 3.1.4-2004/02/19: looking for picture.... silentjpeg size 7503 bytes, found (640x480, 2109 bytes, v3).
+Console: switching to colour frame buffer device 80x30
+fb0: VESA VGA frame buffer device
+Real Time Clock Driver v1.12a
+i8042.c: Can't read CTR while initializing i8042.
+Serial: 8250/16550 driver $Revision: 1.90 $ 8 ports, IRQ sharing disabled
+ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+ttyS1 at I/O 0x2f8 (irq = 3) is a 16550A
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered
+RAMDISK driver initialized: 16 RAM disks of 8192K size 1024 blocksize
+loop: loaded (max 32 devices)
+Uniform Multi-Platform E-IDE driver Revision: 7.00alpha2
+ide: Assuming 33MHz system bus speed for PIO modes; override with idebus=xx
+Probing IDE interface ide0...
+hda: SanDisk SDCFB-64, ATA DISK drive
+ide1: I/O resource 0x170-0x177 not free.
+ide1: ports already in use, skipping probe
+Probing IDE interface ide2...
+Probing IDE interface ide3...
+Probing IDE interface ide4...
+Probing IDE interface ide5...
+elevator: using anticipatory as default io scheduler
+ide0 at 0x1f0-0x1f7,0x3f6 on irq 14
+hda: max request size: 128KiB
+hda: 125440 sectors (64 MB) w/1KiB Cache, CHS=490/8/32
+hda: cache flushes not supported
+ hda: hda1 hda2
+mice: PS/2 mouse device common for all mice
+input: PC Speaker
+NET: Registered protocol family 2
+IP: routing cache hash table of 4096 buckets, 64Kbytes
+TCP: Hash tables configured (established 131072 bind 43690)
+Initializing XFRM netlink socket
+NET: Registered protocol family 1
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+Starting balanced_irq
+RAMDISK: Compressed image found at block 0
+VFS: Mounted root (ext2 filesystem).
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+Freeing unused kernel memory: 204k freed
+usbcore: registered new driver usbfs
+usbcore: registered new driver hub
+usbcore: registered new driver usbkbd
+drivers/usb/input/usbkbd.c: :USB HID Boot Protocol keyboard driver
+USB Universal Host Controller Interface driver v2.2
+uhci_hcd 0000:00:1d.0: UHCI Host Controller
+PCI: Setting latency timer of device 0000:00:1d.0 to 64
+uhci_hcd 0000:00:1d.0: irq 16, io base 0x1840
+uhci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 1
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+uhci_hcd 0000:00:1d.1: UHCI Host Controller
+PCI: Setting latency timer of device 0000:00:1d.1 to 64
+uhci_hcd 0000:00:1d.1: irq 19, io base 0x1860
+uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 2
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+ehci_hcd 0000:00:1d.7: EHCI Host Controller
+PCI: Setting latency timer of device 0000:00:1d.7 to 64
+ehci_hcd 0000:00:1d.7: irq 23, pci mem 0xd0000400
+ehci_hcd 0000:00:1d.7: new USB bus registered, assigned bus number 3
+PCI: cache line size of 128 is not supported by device 0000:00:1d.7
+ehci_hcd 0000:00:1d.7: USB 2.0 initialized, EHCI 1.00, driver 26 Oct 2004
+hub 3-0:1.0: USB hub found
+hub 3-0:1.0: 6 ports detected
+i2c /dev entries driver
+usb 1-1: new low speed USB device using uhci_hcd and address 2
+Disabled Privacy Extensions on device c039e3e0(lo)
+input: LITEON Technology USB Multimedia Keyboard on usb-0000:00:1d.0-1
+Linux agpgart interface v0.100 (c) Dave Jones
+agpgart: Detected an Intel i875 Chipset.
+agpgart: Maximum main memory to use for agp memory: 941M
+agpgart: AGP aperture is 128M @ 0xd8000000
+usb 1-2: new full speed USB device using uhci_hcd and address 3
+usbcore: registered new driver hiddev
+hw_random hardware driver 1.0.0 loaded
+SCSI subsystem initialized
+libata version 1.10 loaded.
+ata_piix version 1.03
+ata_piix: combined mode detected
+ata: 0x1f0 IDE port busy
+PCI: Setting latency timer of device 0000:00:1f.2 to 64
+ata1: SATA max UDMA/133 cmd 0x170 ctl 0x376 bmdma 0x18B8 irq 15
+ata1: dev 0 cfg 49:2f00 82:346b 83:7fe9 84:4773 85:3469 86:bc01 87:4763 88:207f
+ata1: dev 0 ATA, max UDMA/133, 156301488 sectors: lba48
+ata1: dev 0 configured for UDMA/133
+scsi0 : ata_piix
+  Vendor: ATA       Model: ExcelStor Techno  Rev: P21O
+  Type:   Direct-Access                      ANSI SCSI revision: 05
+SCSI device sda: 156301488 512-byte hdwr sectors (80026 MB)
+SCSI device sda: drive cache: write back
+SCSI device sda: 156301488 512-byte hdwr sectors (80026 MB)
+SCSI device sda: drive cache: write back
+ sda: unknown partition table
+Attached scsi disk sda at scsi0, channel 0, id 0, lun 0
+i2c_i801: Ignoring new-style parameters in presence of obsolete ones
+Intel(R) PRO/1000 Network Driver - version 7.0.41
+Copyright (c) 1999-2006 Intel Corporation.
+e1000: 0000:03:01.0: e1000_probe: (PCI:66MHz:32-bit) 00:d0:f1:0c:4e:d2
+e1000: eth0: e1000_probe: Intel(R) PRO/1000 Network Connection
+drivers/usb/input/hid-core.c: timeout initializing reports
+
+input,hiddev96: USB HID v1.10 Mouse [ACROX A1H Mouse] on usb-0000:00:1d.0-2
+input: USB HID v1.11 Keyboard [ACROX A1H Mouse] on usb-0000:00:1d.0-2
+usbcore: registered new driver usbhid
+drivers/usb/input/hid-core.c: v2.0:USB HID core driver
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on sda, internal journal
+EXT3-fs: recovery complete.
+EXT3-fs: mounted filesystem with ordered data mode.
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+basebd: module license 'unspecified' taints kernel.
+LBB: SRAM 2048[kB]
+LBB: Baseboard driver ver. 1.11 
+LBB: found 837-14472 Base Board at C1961400 dev_id=F4A753E0(F4A753E0)
+LBB: IRQ=23
+LBB: base board is ready.
+ctaud: Device found: IO Base = 0x3000, IRQ = 22
+PCI: Setting latency timer of device 0000:00:1f.5 to 64
+intel8x0_measure_ac97_clock: measured 50729 usecs
+intel8x0: clocking to 48000
+e1000: eth0: e1000_watchdog: NIC Link is Up 1000 Mbps Full Duplex
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+LBB:lbbRelease: 00000001 set from 0 to EMPTY.
+

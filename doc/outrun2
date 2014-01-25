@@ -1,0 +1,41 @@
+Cabinet handling (Full motion cabinet which has the taillights attached) is connected via ttyS1:
+
+  A    B    C    D    E    F    G    H    I    J    K    L    M    N    O
+0xFF 0xF2 0x00 0x11 0x23 0xFE 0xFE 0xFE 0xFE 0xFE 0xFE 0xFE 0xFE 0xFE 0x3B  Base
+            1                                                           1   Initialize
+             1                                                           1  L ACT CW
+             3                                                           3  L ACT CCW
+             2                                                           2  R ACT CW
+             4                                                           4  R ACT CCW
+             5                                                           5  LR ACT CW
+             6                                                           6  LR ACT CCW
+             7                                                           7  L ACT CW R ACT CCW
+             8                                                           8  L ACT CCW R ACT CW
+                  0                                                      0  ACT Move Speed: Low
+                  1                                                      1  ACT Move Speed: Mid
+                  2                                                      2  ACT Move Speed: High
+                       0                                                 0  Tail Lamp Off
+                      -2                                                +2  Tail Lamp On
+                      -1                                                -1  Tail Lamp All On
+
+A = Sync?
+B = ~(Length of packet)? (Always 13)
+CDE = Data
+FGHIJKLMN = Reserved?
+O = Checksum (Sum of 4 bit nibbles gets close)
+
+
+Drive Board (Wheel feedback?) is connected via ttyS0:
+
+  A    B    C    D    E    F    G
+0xFF 0x00 0x00 0x7D 0x00 0x00 0x02 Initialize
+
+Once the menu aborts the action:
+0x84 0x01 0x00 0x04 0x01 0x00 0x00
+0x80 0x00 0x00 0x00 0x00 0x00 0x00
+0x84 0x01 0x00 0x04 0x01 0x00 0x00
+0x80 0x00 0x00 0x00 0x00 0x00 0x00
+
+A = Sync? Packet type maybe?
+BCDEFG = ?
+
